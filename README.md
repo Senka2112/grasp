@@ -1,6 +1,6 @@
 # grasp
 # GMAR grasping exercise
-
+download this folder in your src folder in workspace which is containing baxter and movIt files
 # starting Baxter in Simulation
 
 Copy this folder to your workspace which is containing moveIt and baxter files
