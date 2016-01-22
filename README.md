@@ -48,8 +48,7 @@ In the window displays select "Motion Planning" - "Planning Request". In the "Pl
 select the arm you want to plan.
 
 Now you are ready to plan.
-Please keep in mind that before every planning request you have to set the update the start state
-to the current state.
+Please keep in mind that before every planning request you have to set the update the start state to the current state.
 ------------------------------------------------
 # Grasp
 Edit file moveBaxter.cpp to achieve grasping.
