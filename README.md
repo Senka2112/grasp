@@ -9,23 +9,27 @@ Open terminal
 Terminal commands to start Baxter in Simulator
 Exectute one by one:
 
-> cd gmar_ws/
-> source devel/setup.bash
-> ./baxter.sh sim
-> roslaunch baxter_gazebo baxter_world.launch
 
+```bash 
+$ cd gmar_ws/
+$ source devel/setup.bash
+$ ./baxter.sh sim
+$ roslaunch baxter_gazebo baxter_world.launch
+```
 
 --------------------------------------------------
 # starting MoveIt
 Open new terminal
 Exectute one by one:
 
-> cd gmar_ws/
-> ./baxter.sh sim
-> source devel/setup.bash
-> rosrun baxter_tools enable_robot.py -e
-> roslaunch baxter_moveit_config baxter_grippers.launch
 
+```bash 
+$ cd gmar_ws/
+$ ./baxter.sh sim
+$ source devel/setup.bash
+$ rosrun baxter_tools enable_robot.py -e
+$ roslaunch baxter_moveit_config baxter_grippers.launch
+```
 ------------------------------------------------------
 
 # Baxter Collision Scene
