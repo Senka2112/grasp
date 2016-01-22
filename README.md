@@ -50,3 +50,40 @@ select the arm you want to plan.
 Now you are ready to plan.
 Please keep in mind that before every planning request you have to set the update the start state
 to the current state.
+------------------------------------------------
+# Grasp
+Edit file moveBaxter.cpp to achieve grasping.
+Run your demo
+```bash 
+$ cd gmar_ws/
+$ ./baxter.sh 
+$ source devel/setup.bash
+$ rosrun grasp moveB
+```
+-------------------------------------------------
+#Vision
+Start tracking of modelled object with v4r
+Start openni
+```bash 
+$ cd gmar_ws/
+$ ./baxter.sh 
+$ source devel/setup.bash
+$ roslaunch openni2_launch openni2.launch depth_registration:=true
+```
+in new terminal start tracker of the object
+```bash
+$ cd gmar_ws/
+$ ./baxter.sh 
+$ source devel/setup.bash
+$ rosrun object_tracker object_tracker_service -m /home/{your path}/models/tea/tracking_model.ao
+```
+
+in another terminal call tracking service
+```bash 
+$ cd gmar_ws/
+$ ./baxter.sh sim
+$ source devel/setup.bash
+$ rosservice call /object_tracker/start_recording
+```
+
+
